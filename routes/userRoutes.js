@@ -1,3 +1,4 @@
+
 const express = require("express");
 
 const router = express.Router();
@@ -5,7 +6,7 @@ const router = express.Router();
 const userController = require("../controllers/userController");
 
 // GET : Tous les utilisateurs
-router.get("/", userController.getAllUsers);
+router.get("/", userController.getUsers);
 
 // GET : Un utilisateur par ID
 router.get("/:id", userController.getUserById);
